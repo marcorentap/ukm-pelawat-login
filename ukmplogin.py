@@ -29,7 +29,7 @@ def main():
     providers = ['gmail.com', 'yahoo.com',
                  'outlook.com', 'hotmail.com', 'icloud.com']
 
-    # Generate random character username, with maximum length of 10 character
+    # Generate random character username, with maximum length of 10 characters
     username = ''
     for x in range(0, random.randrange(1, 7)):
         username += characters[random.randrange(0, len(characters))]
