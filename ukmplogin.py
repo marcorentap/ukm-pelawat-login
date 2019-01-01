@@ -41,12 +41,12 @@ def main():
     parameters = {
         'email': email,
         'cmd': 'authenticate',
-        'Login': 'Log In',
+        'submit' : 'Login',
         'user-agent': useragent
     }
 
     # Display information used to terminal
-    url = "http://10.23.0.3/cgi-bin/login?cmd=login"
+    url = "http://10.23.0.3/auth/index.html/u"
     print(header)
     print("""    _||_||_____________
    |                   |
@@ -54,7 +54,7 @@ def main():
    |___________________|""")
     print("Useragent: {0}".format(parameters['user-agent']))
     print("Email : {0}\ncmd : {1}\nLogin: {2}\n".format(
-        parameters['email'], parameters['cmd'], parameters['Login']))
+        parameters['email'], parameters['cmd'], parameters['submit']))
     print("Connecting to {0}".format(url))
 
     # Don't allow redirects because we will get too many redirects when URL doesn't accept bots(?)
